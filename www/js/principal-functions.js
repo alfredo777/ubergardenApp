@@ -1,5 +1,6 @@
 //var domine = "http://192.168.1.82:3000/"
-var domine = "http://172.20.10.8:3000/"
+//var domine = "http://172.20.10.8:3000/"
+var domine = "http://www.urgarden.com.mx/"
 console.log = function() {}
 
 var h = $(window).height();
