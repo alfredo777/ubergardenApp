@@ -1,13 +1,22 @@
-<script type="text/javascript" src="js/imglightbox.min.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.slider').bxSlider({
+	    mode: 'fade',
+		adaptiveHeight: true,
+		responsive: true,
+		touchEnabled: true
+		});
+});
+</script>
 <center>
-{{#each imagenes}}
-<div class="mid-img">
-	<img src="data:image/png;base64,{{img}}" alt="" width="100%" class="libox" >
+<div class="slider">
+	{{#each imagenes}}
+	 <img src="data:image/png;base64,{{img}}" alt="" width="70%" />
+	{{/each}}
 </div>
-{{/each}}
 </center>
-
-
 <script>
-   hide_ajax();
+hide_ajax();
 </script>

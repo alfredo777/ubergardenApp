@@ -24,3 +24,10 @@
 .text-justify{
 	text-align: justify;
 }
+
+.truncate-text{
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
