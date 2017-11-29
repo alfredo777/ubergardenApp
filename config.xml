@@ -4,11 +4,12 @@
     <preference name="fullscreen" value="true" />
     <name>Ur Garden</name>
     <description>
-        Aplicación de la tienda en linea www.urgarden.com.mx la primer tienda de Jardinería en linea México
+        Aplicación de la tienda en linea www.urgarden.com.mx la primer tienda de Jardinería en linea México.
     </description>
     <author email="jardarubydv@gmail.com" href="http://cordova.io">
         JARDA
     </author>
+    <icon src="res/icon/ios/icon.png" />
     <content src="index.html" />
     <access origin="*" />
     <access origin="http://google.com" />
@@ -29,8 +30,9 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <icon platform="ios" src="www/res/icon/ios/icon-72-2x.png"/>
+        <icon src="res/icon/ios/icon-72@2x.png" platform="ios" width="180" height="180" />
     </platform>
+
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
 </widget>
