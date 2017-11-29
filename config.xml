@@ -2,9 +2,9 @@
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
-    <name>Ur Garden | Tienda de Jardinería en linea México</name>
+    <name>Ur Garden</name>
     <description>
-        Aplicación de la tienda en linea www.urgarden.com.mx
+        Aplicación de la tienda en linea www.urgarden.com.mx la primer tienda de Jardinería en linea México
     </description>
     <author email="jardarubydv@gmail.com" href="http://cordova.io">
         JARDA
@@ -29,20 +29,20 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <icon height="57" platform="ios" src="www/res/icon/ios/icon-57.png" width="57" />
-        <icon height="114" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="114" />
-        <icon height="40" platform="ios" src="www/res/icon/ios/icon-57.png" width="40" />
-        <icon height="80" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="80" />
-        <icon height="50" platform="ios" src="www/res/icon/ios/icon-57.png" width="50" />
-        <icon height="100" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="100" />
-        <icon height="60" platform="ios" src="www/res/icon/ios/icon-57.png" width="60" />
-        <icon height="120" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="120" />
-        <icon height="180" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="180" />
-        <icon height="72" platform="ios" src="www/res/icon/ios/icon-72.png" width="72" />
-        <icon height="144" platform="ios" src="www/res/icon/ios/icon-72-2x.png" width="144" />
-        <icon height="29" platform="ios" src="www/res/icon/ios/icon-57.png" width="29" />
-        <icon height="58" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="58" />
-        <icon height="87" platform="ios" src="www/res/icon/ios/icon-72-2x.png" width="87" />
+        <icon height="57" platform="ios" src="/www/res/icon/ios/icon-57.png" width="57" />
+        <icon height="114" platform="ios" src="/www/res/icon/ios/icon-57-2x.png" width="114" />
+        <icon height="40" platform="ios" src="/www/res/icon/ios/icon-57.png" width="40" />
+        <icon height="80" platform="ios" src="/www/res/icon/ios/icon-57-2x.png" width="80" />
+        <icon height="50" platform="ios" src="/www/res/icon/ios/icon-57.png" width="50" />
+        <icon height="100" platform="ios" src="/www/res/icon/ios/icon-57-2x.png" width="100" />
+        <icon height="60" platform="ios" src="/www/res/icon/ios/icon-57.png" width="60" />
+        <icon height="120" platform="ios" src="/www/res/icon/ios/icon-57-2x.png" width="120" />
+        <icon height="180" platform="ios" src="/www/res/icon/ios/icon-57-2x.png" width="180" />
+        <icon height="72" platform="ios" src="/www/res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="/www/res/icon/ios/icon-72-2x.png" width="144" />
+        <icon height="29" platform="ios" src="/www/res/icon/ios/icon-57.png" width="29" />
+        <icon height="58" platform="ios" src="/www/res/icon/ios/icon-57-2x.png" width="58" />
+        <icon height="87" platform="ios" src="/www/res/icon/ios/icon-72-2x.png" width="87" />
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
