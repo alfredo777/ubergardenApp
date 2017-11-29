@@ -40,6 +40,9 @@
         <icon height="180" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="180" />
         <icon height="72" platform="ios" src="www/res/icon/ios/icon-72.png" width="72" />
         <icon height="144" platform="ios" src="www/res/icon/ios/icon-72-2x.png" width="144" />
+        <icon height="29" platform="ios" src="www/res/icon/ios/icon-57.png" width="29" />
+        <icon height="58" platform="ios" src="www/res/icon/ios/icon-57-2x.png" width="58" />
+        <icon height="87" platform="ios" src="www/res/icon/ios/icon-72-2x.png" width="87" />
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
