@@ -3,9 +3,9 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Ur Garden | Tienda de Jardinería en linea México</name>
+    <name>Ur Garden</name>
     <description>
-        Aplicación de la tienda en linea www.urgarden.com.mx
+        Aplicación de la tienda en linea www.urgarden.com.mx la primer tienda de Jardinería en linea México
     </description>
     <author email="jardarubydv@gmail.com" href="http://cordova.io">
         JARDA
