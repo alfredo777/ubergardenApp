@@ -9,7 +9,7 @@
     <author email="jardarubydv@gmail.com" href="http://cordova.io">
         JARDA
     </author>
-    <icon src="res/icon/ios/icon.png" />
+    <icon src="www/res/icon/ios/icon.png" />
     <content src="index.html" />
     <access origin="*" />
     <access origin="http://google.com" />
