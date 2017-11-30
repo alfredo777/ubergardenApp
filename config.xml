@@ -32,27 +32,22 @@
         <allow-intent href="itms-apps:*" />
 
 
-        <!-- iPhone 6 / 6+ -->
-        <icon src="www/res/icon/ios/icon-72@2x.png" platform="ios" width="180" height="180" />
-
-        <!-- iPhone / iPod Touch  -->
-        <icon src="www/res/icon/ios/icon-72.png" platform="ios" width="60" height="60" />
-        <icon src="www/res/icon/ios/icon-72@2x.png" platform="ios" width="120" height="120" />
-
-        <!-- iPad -->
-        <icon src="www/res/icon/ios/icon-72.png" platform="ios" width="76" height="76" />
-        <icon src="www/res/icon/ios/icon-72@2x.png" platform="ios" width="152" height="152" />
-        <icon src="www/res/icon/ios/icon-72@2x.png" platform="ios" width="167" height="167" />
-
-        <!-- Settings Icon -->
-        <icon src="www/res/icon/ios/icon-57.png" platform="ios" width="29" height="29" />
-        <icon src="www/res/icon/ios/icon-57@2x.png" platform="ios" width="58" height="58" />
-        <icon src="www/res/icon/ios/icon-72@2x.png" platform="ios" width="87" height="87" />
-
-        <!-- Spotlight Icon -->
-        <icon src="www/res/icon/ios/icon-57.png" platform="ios" width="40" height="40" />
-        <icon src="www/res/icon/ios/icon-57@2x.png" platform="ios" width="80" height="80" />
-        <icon src="www/res/icon/ios/icon-57@2x.png" platform="ios" width="120" height="120" />
+        <icon height="57" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="57" />
+        <icon height="114" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="114" />
+        <icon height="40" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="40" />
+        <icon height="80" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="80" />
+        <icon height="50" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="50" />
+        <icon height="100" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="100" />
+        <icon height="60" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="60" />
+        <icon height="120" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="120" />
+        <icon height="180" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="180" />
+        <icon height="72" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="72" />
+        <icon height="144" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="76" />
+        <icon height="152" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="152" />
+        <icon height="29" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="29" />
+        <icon height="58" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="58" />
+        <icon height="87" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="87" />
 
 
     </platform>
