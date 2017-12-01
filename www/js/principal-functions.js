@@ -1,23 +1,23 @@
 //var domine = "http://192.168.1.82:3000/"
 //var domine = "http://172.20.10.8:3000/"
-var domine = "http://www.urgarden.com.mx/"
+var domine = "https://www.urgarden.com.mx/"
 console.log = function() {}
 
 var h = $(window).height();
-$('#back').height(h);
+/*$('#back').height(h);
 setTimeout(function() {
     $('#back').show();
     $('#back').addClass('animated zoomIn');
-}, 300);
+}, 300);*/
 
 $(document).ready(function() {
     var sesc = window.localStorage.getItem("session_token");
     console.log('<<<<<<<>>>>>>>>>>>' + sesc);
     setTimeout(function() {
-        $('#back').addClass('animated zoomOut');
+        /*$('#back').addClass('animated zoomOut');*/
         show_ajax('Cargando productos recomendados');
 
-    }, 2700);
+    }, 1300);
     setTimeout(function() {
         $('#back').hide();
         $('#bodyx').show();
