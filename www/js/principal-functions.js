@@ -15,7 +15,7 @@ $(document).ready(function() {
     console.log('<<<<<<<>>>>>>>>>>>' + sesc);
     setTimeout(function() {
         show_ajax('Cargando productos recomendados');
-    }, 200);
+    }, 50);
     setTimeout(function() {
         $('#back').hide();
         $('#bodyx').show();
@@ -24,11 +24,11 @@ $(document).ready(function() {
         }, 850);
         setTimeout(function() {
             loadPartial('', 'menu', 'menu-top');
-        }, 700);
+        }, 500);
         setTimeout(function() {
             get_index();
         }, 300);
-    }, 2500);
+    }, 1000);
 });
 // get products
 function get_index() {
