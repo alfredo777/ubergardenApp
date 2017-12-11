@@ -14,23 +14,22 @@ $(document).ready(function() {
     var sesc = window.localStorage.getItem("session_token");
     console.log('<<<<<<<>>>>>>>>>>>' + sesc);
     setTimeout(function() {
-        /*$('#back').addClass('animated zoomOut');*/
         show_ajax('Cargando productos recomendados');
-
-    }, 1300);
+    }, 50);
     setTimeout(function() {
         $('#back').hide();
         $('#bodyx').show();
         setTimeout(function() {
             loadPartial('', 'botmenu', 'menu-bottom');
-        }, 250);
+        }, 850);
         setTimeout(function() {
             loadPartial('', 'menu', 'menu-top');
-        }, 900);
+        }, 500);
         setTimeout(function() {
-            get_index();
+            //get_index();
+            get_products();
         }, 300);
-    }, 3500);
+    }, 1000);
 });
 // get products
 function get_index() {
@@ -66,7 +65,7 @@ function get_products(clear = true) {
         var page = window.localStorage.getItem("PageProducts");
         window.localStorage.setItem("AllProducts", false);
     } else {
-        show_ajax('Descargando más productos');
+        show_ajax('Descargando productos');
         page = parseInt(window.localStorage.getItem("PageProducts")) + 1;
         window.localStorage.setItem("PageProducts", page);
     }

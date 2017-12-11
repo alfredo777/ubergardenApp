@@ -79,7 +79,7 @@ Handlebars.registerHelper('renderStaticPartial', function(context) {
 
 
 Handlebars.registerHelper('host', function(url) {
-    var host = "http://www.urgarden.com.mx"+ url;
+    var host = "https://www.urgarden.com.mx"+ url;
     return host;
 });
 

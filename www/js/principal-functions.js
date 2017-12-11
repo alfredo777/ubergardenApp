@@ -26,7 +26,8 @@ $(document).ready(function() {
             loadPartial('', 'menu', 'menu-top');
         }, 500);
         setTimeout(function() {
-            get_index();
+            //get_index();
+            get_products();
         }, 300);
     }, 1000);
 });
@@ -64,7 +65,7 @@ function get_products(clear = true) {
         var page = window.localStorage.getItem("PageProducts");
         window.localStorage.setItem("AllProducts", false);
     } else {
-        show_ajax('Descargando más productos');
+        show_ajax('Descargando productos');
         page = parseInt(window.localStorage.getItem("PageProducts")) + 1;
         window.localStorage.setItem("PageProducts", page);
     }
