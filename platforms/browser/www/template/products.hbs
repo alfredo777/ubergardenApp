@@ -20,9 +20,11 @@
             <div class="get-p{{Id}}">
               <img id="img{{Id}}" src="data:image/png;base64,{{img}}" alt="">
             </div>
-            <h3><a href="" class="truncate-text">{{nombre}}</a></h3>
+            <center>
+            <p class="truncate-text title-text">{{nombre}}</p>
+            </center>
             {{#if descuento}}
-            <div class="price">de <span>${{precio}}</span> a ${{precio_final}}</div>
+            <div class="price" style="font-size: 15px;">de <span>${{precio}}</span> a ${{precio_final}}</div>
             {{else}}
             <div class="price"> ${{precio_final}}</div>
             {{/if}}
@@ -74,13 +76,14 @@
     <center><b>Ya no hay mas productos por cargar.</b></center>
   </div>
   {{/if}}
-</div>
+
 {{#if paginas}}
 <script type="text/javascript">
 $(window).scroll(function () {
 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
-get_products(false)
+get_products(false);
 }
 });
 </script>
 {{/if}}
+</div>

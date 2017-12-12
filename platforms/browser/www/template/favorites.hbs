@@ -20,9 +20,11 @@
 						<div class="get-p{{Id}}">
 							<img id="img{{Id}}" src="data:image/png;base64,{{img}}" alt="">
 						</div>
-						<h3><a href="">{{nombre}}</a></h3>
+						<center>
+					    <p class="truncate-text title-text">{{nombre}}</p>
+					    </center>
 						{{#if descuento}}
-						<div class="price">de <span>${{precio}}</span> a ${{precio_final}}</div>
+						<div class="price" style="font-size: 15px;">de <span>${{precio}}</span> a ${{precio_final}}</div>
 						{{else}}
 						<div class="price"> ${{precio_final}}</div>
 						{{/if}}
@@ -62,11 +64,6 @@
 		</div>
 	</div>
 	<div class="clear-both"></div>
-	{{#if paginas}}
-	<div class="pagination-blog" style="display:none;" id="no-products">
-		<center><b>Ya no hay mas productos por cargar.</b></center>
-	</div>
-	{{/if}}
 </div>
 <script type="text/javascript">
 function quit_product_favorite(producto_id){

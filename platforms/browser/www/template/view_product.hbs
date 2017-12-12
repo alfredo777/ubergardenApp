@@ -1,11 +1,17 @@
+<script type="text/javascript">
+window.localStorage.setItem("PageProducts", null);
+var page = window.localStorage.getItem("PageProducts");
+window.localStorage.setItem("AllProducts", null);
+</script>
 <div class="container">
 	<div class="single-product">
 		<h2>{{nombre}}</h2>
-		{{#if descuento}}
-		<h5 style="font-size: 12px;">Precio de oferta: ${{precio_final}}</h5>
+		{{#equal descuento 0}}
+		<p class="price">Precio: ${{precio_final}}</p>
 		{{else}}
-		<h5 style="font-size: 12px;">Precio: ${{precio_final}}</h5>
-		{{/if}}
+		<p class="price">Precio de oferta: ${{precio_final}}</p>
+		{{/equal}}
+
 		<br/><br/>
 		<div class="slide-cat" id="slider">
 		    <div style="background: #eee; padding: 40px;">

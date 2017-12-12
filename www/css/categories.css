@@ -26,8 +26,13 @@
 }
 
 .truncate-text{
-  width: 80px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 8em; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.title-text{
+	font-weight: 600;
+    font-size: 15px;
 }

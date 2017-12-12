@@ -72,6 +72,32 @@ Handlebars.registerHelper('favoriteButton', function(producto_id) {
 });
 
 
+Handlebars.registerHelper('equalx', function(val,val2,validate,context) {
+    if(val == val2){
+      validate = true;
+    }else{
+      validate = false;
+    }
+
+    if(validate) {
+      return context;
+    }else{
+      return '';
+    }
+});
+
+
+Handlebars.registerHelper('equal', function(lvalue, rvalue, options) {
+    if (arguments.length < 3)
+        throw new Error("Handlebars Helper equal needs 2 parameters");
+    if( lvalue!=rvalue ) {
+        return options.inverse(this);
+    } else {
+        return options.fn(this);
+    }
+});
+
+
 
 Handlebars.registerHelper('renderStaticPartial', function(context) {
     return JSON.stringify(context);

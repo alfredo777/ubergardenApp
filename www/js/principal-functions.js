@@ -26,7 +26,6 @@ $(document).ready(function() {
             loadPartial('', 'menu', 'menu-top');
         }, 500);
         setTimeout(function() {
-            //get_index();
             get_products();
         }, 300);
     }, 1000);
@@ -130,36 +129,6 @@ function remove_product_favorite(producto_id) {
     });
 }
 
-function favotied(producto_id) {
-    var favorite = [];
-    var button;
-    var button1 = '<div id="button_favorite' + producto_id + '"><a class="button-bordered red-button-no-inverse button-90" onclick="add_product_to_favorite(' + producto_id + ')">' + '<i class="fa fa-heart"></i> Favorito</a></div>';
-    var button2 = '<div id="button_favorite' + producto_id + '"><a class="button-bordered red-button-inverse button-90" onclick="remove_product_favorite(' + producto_id + ')">' + '<i class="fa fa-heart"></i> Favorito </a></div>';
-    setTimeout(function() {
-        findQueryRequest('favoritos', 'producto_id', producto_id, function(data) {
-            if (data == '') {
-                favorite.push(false);
-            } else {
-                favorite.push(true);
-            }
-        });
-    }, 300);
-    setTimeout(function() {
-        var lxc = favorite[0];
-        console.log(favorite);
-        console.log(lxc);
-        if (lxc == true) {
-            button = button2;
-        } else {
-            button = button1;
-        }
-    }, 1150);
-
-    setTimeout(function() {
-        console.log(button);
-        $('#favorite-' + producto_id).html(button);
-    }, 1190);
-}
 
 function my_products(div, effect = true) {
     var str = window.localStorage.getItem("AllCar");
@@ -206,6 +175,10 @@ function all_categories(div) {
 
 function get_favorites() {
     var url = domine + 'api/favoritos';
+
+    window.localStorage.setItem("PageProducts", null);
+    var page = window.localStorage.getItem("PageProducts");
+    window.localStorage.setItem("AllProducts", null);
     show_ajax();
     callAllQuery('favoritos', function(callback) {
         var idsX = [];
