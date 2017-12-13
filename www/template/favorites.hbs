@@ -18,15 +18,15 @@
 				<div class="col s6" style="margin-top:10px;" id="favorito{{Id}}">
 					<div class="content">
 						<div class="get-p{{Id}}">
-							<img id="img{{Id}}" src="data:image/png;base64,{{img}}" alt="">
+							<img id="img{{Id}}" src="{{img}}" alt="">
 						</div>
 						<center>
 					    <p class="truncate-text title-text">{{nombre}}</p>
 					    </center>
 						{{#if descuento}}
-						<div class="price" style="font-size: 15px;">de <span>${{precio}}</span> a ${{precio_final}}</div>
+						<div class="price" style="font-size: 15px; height:20px;">de <span>${{precio}}</span> a ${{precio_final}}</div>
 						{{else}}
-						<div class="price"> ${{precio_final}}</div>
+						<div class="price" style="height:20px;"> ${{precio_final}}</div>
 						{{/if}}
 						<div id="descripccion{{Id}}" data-v="{{descripccion}}"></div>
 						<center>
