@@ -1,6 +1,4 @@
-<script type="text/javascript">
-var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
-</script>
+
 <div class="checkout pages section">
 	<div class="container">
 		<div class="pages-head" style="margin-top: -50px;">
@@ -34,6 +32,9 @@ var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
 						<li>
 							<div class="collapsible-header"><h5><i class="fa fa-credit-card-alt" aria-hidden="true" style="margin-top:-10px;"></i> Método de pago </h5></div>
 							<div class="collapsible-body"> {{pedido.metodo_de_pago}}</div>
+							{{#equal pedido.metodo_de_pago 'oxxo'}}
+							   Código para pago: <b>{{pedido.oxxocode}}</b>
+							{{/equal}}
 						</li>
 						<li>
 							<div class="collapsible-header"><h5><i class="fa fa-money" aria-hidden="true" style="margin-top:-10px;"></i> Valor del pedido: </h5></div>
@@ -61,3 +62,6 @@ var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
 </div>
 <script src="js/materialize.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
+</script>
