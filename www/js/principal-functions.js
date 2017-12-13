@@ -189,10 +189,6 @@ function all_categories(div) {
 
 function get_favorites() {
     var url = domine + 'api/favoritos';
-
-    window.localStorage.setItem("PageProducts", null);
-    var page = window.localStorage.getItem("PageProducts");
-    window.localStorage.setItem("AllProducts", null);
     show_ajax();
     callAllQuery('favoritos', function(callback) {
         var idsX = [];
