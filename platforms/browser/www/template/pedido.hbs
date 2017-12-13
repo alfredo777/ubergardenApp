@@ -31,9 +31,10 @@
 						</li>
 						<li>
 							<div class="collapsible-header"><h5><i class="fa fa-credit-card-alt" aria-hidden="true" style="margin-top:-10px;"></i> Método de pago </h5></div>
-							<div class="collapsible-body"> {{pedido.metodo_de_pago}}
+							<div class="collapsible-body"> 
+							{{pedido.metodo_de_pago}}
 							{{#equal pedido.metodo_de_pago 'oxxo'}}
-							   Código para pago: <b>{{pedido.oxxocode}}</b>
+							   <b>{{pedido.oxxocode}}</b>
 							{{/equal}}
 							</div>
 						</li>
