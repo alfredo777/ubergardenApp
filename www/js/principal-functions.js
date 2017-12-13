@@ -117,7 +117,6 @@ function add_product_selection_to_data_base(producto_id, color, name) {
     }*/
 
     var compose_data = [producto_id, color, sesc];
-    alert(sesc);
     var insertinCART = insertData(compose_data, 'carrito', myDataBase, Schema, false);
     alert('Se ha agregado el producto ' + name + ' al carrito');
 }
