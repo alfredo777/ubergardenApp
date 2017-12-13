@@ -52,10 +52,7 @@ function get_index() {
 
 function get_products(clear = true) {
 
-    $('.select').removeClass('rubberBand');
-    $('.select').removeClass('select');
-    $('.tab-bott').first().addClass('animated rubberBand');
-    $('.tab-bott').first().addClass('select');
+    
 
     if (clear == true) {
         show_ajax('Cargando productos');
@@ -63,6 +60,11 @@ function get_products(clear = true) {
         window.localStorage.setItem("PageProducts", page);
         var page = window.localStorage.getItem("PageProducts");
         window.localStorage.setItem("AllProducts", false);
+
+        $('.select').removeClass('rubberBand');
+        $('.select').removeClass('select');
+        $('.tab-bott').first().addClass('animated rubberBand');
+        $('.tab-bott').first().addClass('select');
     } else {
         show_ajax('Descargando productos');
         page = parseInt(window.localStorage.getItem("PageProducts")) + 1;

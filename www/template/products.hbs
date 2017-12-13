@@ -1,3 +1,6 @@
+<script type="text/javascript">
+var paginateALL = window.localStorage.setItem("PageProducts",1);
+</script>
 <div class="post">
   <div class="container">
     <br/>
@@ -79,11 +82,16 @@
 
 {{#if paginas}}
 <script type="text/javascript">
-$(window).scroll(function () {
-if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
-get_products(false);
+var paginateALL = window.localStorage.getItem("PageProducts");
+if(paginateALL == 'ARX'){
+  alert('sin paginación');
+}else{
+  $(window).scroll(function () {
+  if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
+  get_products(false);
+  }
+  });
 }
-});
 </script>
 {{/if}}
 </div>
