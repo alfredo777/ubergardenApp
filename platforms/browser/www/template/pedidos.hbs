@@ -30,9 +30,7 @@ content: counter(li-counter);
 counter-increment: li-counter;
 }
 </style>
-<script type="text/javascript">
-var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
-</script>
+
 <div class="post">
 	<div class="container">
 		<br/>
@@ -62,6 +60,9 @@ var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
 		{{/if}}
 	</div>
 </diV>
+<script type="text/javascript">
+var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
+</script>
 <script type="text/javascript">
 function loadOrder(order){
 	url = domine + 'api/find_order?conekta_order='+order;
