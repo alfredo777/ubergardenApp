@@ -12,14 +12,14 @@ var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
 		<br/>
 		<div class="payment-form-container">
 			<form id="form-pedido">
-				<input type="text" name="nombre_persona_que_ordena" placeholder="Ingresa tu nombre" class="input-field col s12" value="Alfredo"  >
-				<input type="text" name="apellidos_persona_que_ordena" placeholder="Ingresa tus apellidos" class="input-field col s12" value="Reyes" >
-				<input type="text" name="email" placeholder="Ingresa tu email" class="input-field col s12"  value="alfredo@rockstars.mx" >
-				<input type="text" name="telefono_fijo" placeholder="Ingresa tu telefono fijo" class="input-field col s12" value="53416882" >
-				<input type="text" name="telefono_celular" placeholder="Ingresa tu celular" class="input-field col s12"  value="5537705731">
-				<input type="text" name="direccion" placeholder="Ingresa tu dirección" class="input-field col s12" value="hidalgo 10 barrio de la magdalena tequisquiapan queretaro">
-				<input type="text" name="calle" placeholder="Calle" class="input-field col s6" value="hidalgo">
-				<input type="text" name="colonia" placeholder="Colonia" class="input-field col s6" value="barrio de la magdalena">
+				<input type="text" name="nombre_persona_que_ordena" placeholder="Ingresa tu nombre" class="input-field col s12" value=""  >
+				<input type="text" name="apellidos_persona_que_ordena" placeholder="Ingresa tus apellidos" class="input-field col s12" value="" >
+				<input type="text" name="email" placeholder="Ingresa tu email" class="input-field col s12"  value="" >
+				<input type="text" name="telefono_fijo" placeholder="Ingresa tu telefono fijo" class="input-field col s12" value="" >
+				<input type="text" name="telefono_celular" placeholder="Ingresa tu celular" class="input-field col s12"  value="">
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" class="input-field col s12" value="">
+				<input type="text" name="calle" placeholder="Calle" class="input-field col s6" value="">
+				<input type="text" name="colonia" placeholder="Colonia" class="input-field col s6" value="">
 				<input type="text" name="numero_interior" placeholder="Número interior" class="input-field col s6" value="10">
 				<input type="text" name="numero_exterior" placeholder="Número exterior" class="input-field col s6"><br/>
 				<select name="estado" style="display:block !important;" >
@@ -28,12 +28,12 @@ var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
 					<option value="Hidalgo">Hidalgo</option>
 					<option value="Morelos">Morelos</option>
 				</select><br/>
-				<input type="text" name="localidad" placeholder="Localidad" class="input-field col s6" value="tequisquiapan">
-				<input type="text" name="cpostal" placeholder="Código postal" class="input-field col s6" value="11360">
-				<input type="text" name="persona_autorizada_a_recoger_1" placeholder="Otra persona autorizada a recibir la mercancia" class="input-field col s12" value="maria de antuñano"><br/>
+				<input type="text" name="localidad" placeholder="Localidad" class="input-field col s6" value="">
+				<input type="text" name="cpostal" placeholder="Código postal" class="input-field col s6" value="">
+				<input type="text" name="persona_autorizada_a_recoger_1" placeholder="Otra persona autorizada a recibir la mercancia" class="input-field col s12" value=""><br/>
 				<select name="payment_method" style="display:block !important;" >
-					<option value="card">Pago con tarjeta</option>
 					<option value="oxxo">Pago en OXXO</option>
+					<option value="card">Pago con tarjeta</option>
 				</select><br/>
 
 				<input type="text" name="productos"  value="{{productoshash}}" style="display:none;">
