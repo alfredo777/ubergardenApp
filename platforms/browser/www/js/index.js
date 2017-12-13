@@ -28,9 +28,12 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        var devicex = device.uuid;
-        console.log(devicex);
-        window.localStorage.setItem("session_token", devicex); 
+        var sesc = window.localStorage.getItem("session_token");
+        if(sesc == null || sesc == 'null'){
+            var devicex = device.uuid;
+            console.log(devicex);
+            window.localStorage.setItem("session_token", devicex); 
+        }
         this.receivedEvent('deviceready');
        
     },

@@ -102,22 +102,23 @@ function get_products(clear = true) {
 }
 
 function add_product_selection_to_data_base(producto_id, color, name) {
-    document.addEventListener("deviceready", function(){
-      var vInfo =   'Device Name: '     + device.name     + '\n' +
-                    'Device Cordova: '  + device.cordova  + '\n' +
-                    'Device Platform: ' + device.platform + '\n' +
-                    'Device UUID: '     + device.uuid     + '\n' +
-                    'Device Version: '  + device.version;
-        alert(vInfo);
-        window.localStorage.setItem("session_token", device.uuid);
-    }, false);
-
     var sesc = window.localStorage.getItem("session_token");
+    if(sesc == null || sesc == 'null' ){
+        var mathXY = Math.floor((Math.random() * 100000000000000000) + 1);
+        var devicex = 'dispositivo'+ String(mathXY);
+        console.log(devicex);
+        window.localStorage.setItem("session_token", devicex);
+        sesc = window.localStorage.getItem("session_token");
+    }
+
+    if(color == null){
+      var color = 'Natural';
+    }
+
     var compose_data = [producto_id, color, sesc];
     var insertinCART = insertData(compose_data, 'carrito', myDataBase, Schema, false);
     alert('Se ha agregado el producto ' + name + ' al carrito');
 }
-
 
 function add_product_to_favorite(producto_id) {
     var sesc = window.localStorage.getItem("session_token");

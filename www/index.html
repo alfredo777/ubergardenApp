@@ -92,7 +92,7 @@ under the License.
             var button2 = '<div id="button_favorite' + producto_id + '"><a class="button-bordered red-button-inverse button-90" onclick="remove_product_favorite(' + producto_id + ')">' + '<i class="fa fa-heart"></i> Favorito </a></div>';
             setTimeout(function() {
                 findQueryRequest('favoritos', 'producto_id', producto_id, function(data) {
-                    if (data == '') {
+                    if (data == null || data == '') {
                         favorite.push(false);
                     } else {
                         favorite.push(true);
@@ -108,12 +108,12 @@ under the License.
                 } else {
                     button = button1;
                 }
-            }, 850);
+            }, 550);
 
             setTimeout(function() {
                 console.log(button);
                 $('#favorite-' + producto_id).html(button);
-            }, 990);
+            }, 1090);
         }
     </script>
   </body>
