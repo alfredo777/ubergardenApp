@@ -102,34 +102,22 @@ function get_products(clear = true) {
 }
 
 function add_product_selection_to_data_base(producto_id, color, name) {
-    /*var sesc = window.localStorage.getItem("session_token");*/
-    var sesc = window.device.uuid;
-    
-    document.addEventListener("deviceready", onDeviceReadyXX, false);
-
-    /*if(sesc == null){
-        var devicex = window.device.uuid;
-        console.log(devicex);
-        window.localStorage.setItem("session_token", devicex);
-        sesc = window.localStorage.getItem("session_token");
-    }else{
-        sesc = devicex;
-    }*/
-
-    var compose_data = [producto_id, color, sesc];
-    var insertinCART = insertData(compose_data, 'carrito', myDataBase, Schema, false);
-    alert('Se ha agregado el producto ' + name + ' al carrito');
-}
-
-
-function onDeviceReadyXX() {
-       var vInfo =  'Device Name: '     + device.name     + '\n' +
+    document.addEventListener("deviceready", function(){
+      var vInfo =   'Device Name: '     + device.name     + '\n' +
                     'Device Cordova: '  + device.cordova  + '\n' +
                     'Device Platform: ' + device.platform + '\n' +
                     'Device UUID: '     + device.uuid     + '\n' +
                     'Device Version: '  + device.version;
         alert(vInfo);
+        window.localStorage.setItem("session_token", device.uuid);
+    }, false);
+
+    var sesc = window.localStorage.getItem("session_token");
+    var compose_data = [producto_id, color, sesc];
+    var insertinCART = insertData(compose_data, 'carrito', myDataBase, Schema, false);
+    alert('Se ha agregado el producto ' + name + ' al carrito');
 }
+
 
 function add_product_to_favorite(producto_id) {
     var sesc = window.localStorage.getItem("session_token");
