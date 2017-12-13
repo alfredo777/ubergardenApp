@@ -102,14 +102,17 @@ function get_products(clear = true) {
 }
 
 function add_product_selection_to_data_base(producto_id, color, name) {
-    var sesc = window.localStorage.getItem("session_token");
-    
-    if(sesc == null){
+    /*var sesc = window.localStorage.getItem("session_token");*/
+    var sesc = window.device.uuid;
+
+    /*if(sesc == null){
         var devicex = window.device.uuid;
         console.log(devicex);
         window.localStorage.setItem("session_token", devicex);
         sesc = window.localStorage.getItem("session_token");
-    }
+    }else{
+        sesc = devicex;
+    }*/
 
     var compose_data = [producto_id, color, sesc];
     alert(sesc);
