@@ -30,7 +30,11 @@ content: counter(li-counter);
 counter-increment: li-counter;
 }
 </style>
-
+<script type="text/javascript">
+window.localStorage.setItem("PageProducts", null);
+var page = window.localStorage.getItem("PageProducts");
+window.localStorage.setItem("AllProducts", null);
+</script>
 <div class="post">
 	<div class="container">
 		<br/>

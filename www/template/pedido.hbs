@@ -1,5 +1,7 @@
 <script type="text/javascript">
-var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
+window.localStorage.setItem("PageProducts", null);
+var page = window.localStorage.getItem("PageProducts");
+window.localStorage.setItem("AllProducts", null);
 </script>
 <div class="checkout pages section">
 	<div class="container">
@@ -66,7 +68,3 @@ var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
 </div>
 <script src="js/materialize.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-
-<script type="text/javascript">
-var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
-</script>

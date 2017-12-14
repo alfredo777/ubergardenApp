@@ -165,6 +165,20 @@ function my_products(div, effect = true) {
     });
 }
 
+
+function PaginageProducts(paginateALL){
+    if(paginateALL == 'ARX'){
+      alert('sin paginación');
+      $(window).scrollTop(0);
+    }else{
+      $(window).scroll(function () {
+         if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
+           get_products(false);
+          }
+      });
+    }
+}
+
 function all_categories(div) {
 
     url = domine + 'api/categorias';

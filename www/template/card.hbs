@@ -1,6 +1,8 @@
 <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
 <script type="text/javascript">
-var paginateALL = window.localStorage.setItem("PageProducts", 'ARX');
+window.localStorage.setItem("PageProducts", null);
+var page = window.localStorage.getItem("PageProducts");
+window.localStorage.setItem("AllProducts", null);
 </script>
 <script type="text/javascript" >
 $(document).ready(function(){
