@@ -3,7 +3,7 @@
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
     <preference name='phonegap-version' value='cli-6.5.0' />
-    <preference name='pgb-builder-version' value='2' />
+    <preference name='pgb-builder-version' value='1' />
     <name>Ur Garden</name>
     <description>
         Aplicación de la tienda en linea www.urgarden.com.mx la primer tienda de Jardinería en linea México.
