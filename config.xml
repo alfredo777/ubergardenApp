@@ -2,7 +2,6 @@
 <widget id="mx.com.urgarden" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
-    <preference name="phonegap-version" value="cli-7.0.1" />
     <name>Ur Garden</name>
     <description>
         Aplicación tienda de jardinería Ur Garden.
@@ -75,6 +74,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-device" spec="1.1.7" />
-    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-device" spec="~1.1.6" />
 </widget>
