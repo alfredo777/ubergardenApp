@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="mx.com.urgarden" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
     <name>Ur Garden</name>
     <description>
-        Aplicación de la tienda en linea www.urgarden.com.mx la primer tienda de Jardinería en linea México.
+        Aplicación tienda de jardinería Ur Garden.
     </description>
     <author email="jardarubydv@gmail.com" href="http://cordova.io">
         JARDA
@@ -22,4 +22,5 @@
     <allow-intent href="geo:*" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
 </widget>
